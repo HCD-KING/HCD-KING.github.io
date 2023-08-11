@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        
+        <svg class="bike" viewBox="0 0 48 30" width="48px" height="30px">
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g transform="translate(9.5,19)">
+            <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+            <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+                <circle class="bike__spokes" r="5" />
+                <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+            </g>
+        </g>
+        <g transform="translate(24,19)">
+            <g class="bike__pedals-spin" stroke-dasharray="25.133 25.133" stroke-dashoffset="-21.991" transform="rotate(67.5,0,0)">
+                <circle class="bike__pedals" r="4" />
+                <circle class="bike__pedals" r="4" transform="rotate(180,0,0)" />
+            </g>
+        </g>
+        <g transform="translate(38.5,19)">
+            <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+            <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+                <circle class="bike__spokes" r="5" />
+                <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+            </g>
+        </g>
+        <polyline class="bike__seat" points="14 3,18 3" stroke-dasharray="5 5" />
+        <polyline class="bike__body" points="16 3,24 19,9.5 19,18 8,34 7,24 19" stroke-dasharray="79 79" />
+        <path class="bike__handlebars" d="m30,2h6s1,0,1,1-1,1-1,1" stroke-dasharray="10 10" />
+        <polyline class="bike__front" points="32.5 2,38.5 19" stroke-dasharray="19 19" />
+    </g>
+</svg>
+        <div class="container">
+            <div class="profile-box">
+                <img src="images/menu.png" class="menu-icon">
+                <img src="images/setting.png" class="setting-icon">
+                <img src="images/profile-pic.png" class="profile-pic">
+                <h3 class="line-1 anim-typewriter"> T Hemachandran</h3>
+                <br>
+                <h2>Hobby</h2>
+                <p style="font-size: 25px;">Playing games
+                <br>
+                <br><h2>SKILLS</h2>
+                <br>Excellent Communication 
+                <br>B. Com [General]
+                <br> MS-OFFICE and Tally</p>
+                <div class="social-media">
+                    <a href="https://instagram.com/crush._.on._.u?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank">
+                    <img src="images/instagram.png">
+                    </a>
+                </div>
+                <a href="https://instagram.com/crush._.on._.u?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank">
+                <button type="button">Let's Talk</button>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const loaderContainer = document.querySelector('.bike');
+             const Container = document.querySelector('.container');
+            var loader = document.querySelector('.bike');
+            
+    
+var dismissLoadingScreen = function() {
+    loader.style.display = "none";
+    Container.style.display = 'flex';
+    document.body.style.backgroundImage='url(images/background.png)';
+};
+    
+var wait3seconds = function() {
+    // REFERENCE:  https://www.w3schools.com/jsref/met_win_settimeout.asp
+    var result = setTimeout(dismissLoadingScreen, 2900);
+};
+
+window.addEventListener("load", wait3seconds);
+        </script>
+    </body>
+</html>
